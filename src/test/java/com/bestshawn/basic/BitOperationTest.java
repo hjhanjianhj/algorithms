@@ -39,6 +39,11 @@ public class BitOperationTest {
         }
     }
 
+    @Test
+    public void test_getOddTimesNum2() {
+
+    }
+
     private int expectGetOddTimesNum1(int[] arr) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int num : arr) {

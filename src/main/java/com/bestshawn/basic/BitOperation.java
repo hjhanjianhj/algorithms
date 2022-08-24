@@ -39,6 +39,13 @@ public class BitOperation {
         return ret;
     }
 
+    /**
+     * 一个数组中个数出现了k次，其它数都出现了m次，并且k<m，求出现了k次的数
+     * @param arr
+     * @param k
+     * @param m
+     * @return
+     */
     public int getOnlyKTimes(int[] arr, int k, int m) {
         int[] help = new int[32];
         for (int num : arr) {
