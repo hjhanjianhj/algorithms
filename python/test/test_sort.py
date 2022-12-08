@@ -1,6 +1,7 @@
 import unittest
 
 from sort.bubble_sort import bubble_sort
+from sort.insertion_sort import insertion_sort
 
 
 def is_sorted(array):
@@ -19,6 +20,9 @@ def is_sorted(array):
 class TestSuite(unittest.TestCase):
     def test_bubble_sort(self):
         self.assertTrue(is_sorted(bubble_sort([1, 3, 2, 5, 65, 23, 57, 1232])))
+
+    def test_insertion_sort(self):
+        self.assertTrue(is_sorted(insertion_sort([1, 3, 2, 5, 65, 23, 57, 1232])))
 
 
 if __name__ == '__main__':
